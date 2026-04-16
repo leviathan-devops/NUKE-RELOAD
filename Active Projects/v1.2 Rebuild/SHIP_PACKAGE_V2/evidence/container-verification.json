@@ -1,0 +1,49 @@
+{
+  "test_date": "2026-04-16",
+  "test_type": "container_verification",
+  "container_image": "opencode-test:1.4.6",
+  "opencode_version": "1.4.6",
+  "results": {
+    "plugin_loads": true,
+    "identity_loads": true,
+    "identity_length": 8734,
+    "brains_initialize": true,
+    "agents_registered": 11,
+    "kraken_hive_ready": true
+  },
+  "logs": [
+    "[v4.1][kraken-agent] Initializing Kraken Agent Harness",
+    "[v4.1][kraken-agent] [Identity] Orchestrator identity loaded { length: 8734 }",
+    "[v4.1][kraken-agent] [V1.2] Multi-Brain Orchestrator initialized",
+    "[v4.1][kraken-agent] Kraken Agent Harness initialized",
+    "[v4.1][kraken-agent] Agents registered { count: 11, primary: [\"kraken\"] }"
+  ],
+  "identity_files_present": [
+    "KRAKEN.md",
+    "IDENTITY.md",
+    "EXECUTION.md",
+    "QUALITY.md",
+    "TOOLS.md"
+  ],
+  "bugs_fixed": [
+    {
+      "id": 1,
+      "description": "KRAKEN_IDENTITY_DIR env var not set",
+      "fix": "Added ENV KRAKEN_IDENTITY_DIR to container-test/Dockerfile"
+    },
+    {
+      "id": 2,
+      "description": "bundle.spider.raw undefined (renamed to quality)",
+      "fix": "Changed bundle.spider.raw to bundle.quality.raw in injector.ts"
+    },
+    {
+      "id": 3,
+      "description": "ExecutionTrigger type error",
+      "fix": "Explicit type for triggers array"
+    }
+  ],
+  "status": "VERIFIED",
+  "pending": [
+    "Manual TUI behavioral test (opencode run does not fire hooks)"
+  ]
+}

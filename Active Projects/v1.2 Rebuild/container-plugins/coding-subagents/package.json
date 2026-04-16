@@ -1,0 +1,36 @@
+{
+  "name": "coding-subagents",
+  "version": "1.0.0",
+  "description": "OpenCode plugin: gemma (code review) + qwen (natural language to code)",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target bun --format esm --bundle",
+    "build:watch": "bun build src/index.ts --outdir dist --target bun --format esm --bundle --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": "^1.3.6"
+  },
+  "dependencies": {
+    "zod": "4.1.8"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.3.6",
+    "@types/bun": "^1.3.11",
+    "@types/node": "^22.19.15",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "bun": ">=1.0.0"
+  }
+}

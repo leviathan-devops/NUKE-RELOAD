@@ -1,0 +1,32 @@
+=== CHECKPOINT: ship-v1-deployed ===
+Date: 2026-04-16T20:45 UTC
+Phase: DEPLOY COMPLETE → IDENTITY SPAWN INTEGRATION PENDING
+
+STATUS:
+- v1.2 deployed and operational ✅
+- Identity loading verified (8734 chars) ✅
+- Multi-brain architecture verified ✅
+  - PlanningBrain: initialized
+  - ExecutionBrain: initialized  
+  - SystemBrain: initialized
+- 3 clusters active (alpha, beta, gamma) ✅
+- Ship Report v1 created ✅
+
+BLOCKING ISSUE:
+- Identity spawn injection NOT working
+- Sub-agents respond as vanilla OpenCode
+- Need to fix spawn tools to inject identity
+
+CURRENT STATE:
+- Plugin: ~/.config/opencode/plugins/kraken-v1.2/
+- Identity: ~/.config/opencode/plugins/kraken-v1.2/identity/
+- Clusters: alpha (3 agents), beta (3 agents), gamma (3 agents)
+
+SHIP REPORT:
+- Location: Compaction Survival/SHIP_REPORT_v1.md
+- Also in: SHIP_PACKAGE_V2/docs/, NUKE RELOAD/v1.2/
+
+NEXT PHASE:
+- Fix identity spawn injection
+- Modify spawn tools to include identity context
+- Verify spawned agents load Kraken identity

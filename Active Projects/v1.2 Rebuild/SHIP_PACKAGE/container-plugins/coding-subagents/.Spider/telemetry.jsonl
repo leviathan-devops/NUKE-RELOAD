@@ -1,0 +1,6 @@
+{"timestamp":"2026-04-03T21:40:56.633Z","event":"session_started","sessionId":"ses_2aab53b84ffeUP2nI8IywPYMuB","agentName":"spider"}
+{"timestamp":"2026-04-03T21:40:56.712Z","event":"heartbeat","sessionId":"ses_2aab53b84ffeUP2nI8IywPYMuB"}
+{"timestamp":"2026-04-03T21:41:18.908Z","event":"session_started","sessionId":"ses_2aab4e47bffe7YJFOQt2eRTkf2","agentName":"spider"}
+{"timestamp":"2026-04-03T21:41:18.971Z","event":"heartbeat","sessionId":"ses_2aab4e47bffe7YJFOQt2eRTkf2"}
+{"timestamp":"2026-04-03T21:41:30.226Z","event":"session_started","sessionId":"ses_2aab4b845ffeMS0fzInaKAbjCJ","agentName":"spider"}
+{"timestamp":"2026-04-03T21:41:30.282Z","event":"heartbeat","sessionId":"ses_2aab4b845ffeMS0fzInaKAbjCJ"}

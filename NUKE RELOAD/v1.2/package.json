@@ -1,0 +1,17 @@
+{
+  "name": "kraken-agent",
+  "version": "1.2.0",
+  "description": "Kraken Agent v1.2 — Multi-Brain Orchestrator with triple-brain architecture",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target bun --format esm --bundle --external @opencode-ai/plugin",
+    "typecheck": "bun tsc --noEmit"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.3.6"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

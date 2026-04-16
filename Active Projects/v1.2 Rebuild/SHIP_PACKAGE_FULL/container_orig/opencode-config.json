@@ -1,0 +1,10 @@
+{
+  "plugin": [
+    "file:///opt/opencode/plugins/coding-subagents/dist/index.js",
+    "file:///opt/opencode/plugins/opencode-subagent-manager/dist/index.js",
+    "file:///opt/opencode/plugins/opencode-plugin-engineering/dist/index.js",
+    "file:///opt/opencode/plugins/kraken-agent/dist/index.js",
+    "file:///opt/opencode/plugins/shark-agent-v4.7-hotfix-v3/dist/index.js",
+    "file:///opt/opencode/plugins/manta-agent-v1.5/dist/index.js"
+  ]
+}
