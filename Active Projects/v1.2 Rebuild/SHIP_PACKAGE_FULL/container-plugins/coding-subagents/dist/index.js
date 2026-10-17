@@ -12431,7 +12431,7 @@ var logger = createLogger("AgentCLITools");
 
 // src/tools/gemma.ts
 import https from "https";
-var API_KEY = "AIzaSyCdzysjAXh0vmzn4vOKuMSWx1dGIjP44Z4";
+var API_KEY = process.env.GEMINI_API_KEY ?? "";
 function createGemmaTool() {
   return tool({
     description: `Gemma-4-31b-it code generation and documentation specialist.
